@@ -108,12 +108,12 @@ case "${1}" in
 	
     volup)
         # Me to TV -> user pressed vol up
-		send_command "tx 40 44 41"
+		send_command "tx F5 44 41"
 	;;
    
 	voldown)
         # Me to TV -> user pressed vol down
-		send_command "tx 40 44 42"
+		send_command "tx F5 44 42"
 	;;
 
     *)
