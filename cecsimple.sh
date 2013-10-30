@@ -78,7 +78,7 @@ case "${1}" in
     ampoff)
         # My Sony Amp doesn't support "standby" for some reason, so instead
         # I poke it like this...
-        send_command "tx 45 44 6C"
+        send_command "standby 5"
         # 45 means from 4 (me, the playback device) to 5(amp)
         # 44 6C means "the user pressed the power off button, nap time"
     ;;
@@ -108,12 +108,12 @@ case "${1}" in
 	
     volup)
         # Me to TV -> user pressed vol up
-		send_command "tx F5 44 41"
+		send_command "volup"
 	;;
    
 	voldown)
         # Me to TV -> user pressed vol down
-		send_command "tx F5 44 42"
+		send_command "voldown"
 	;;
 
     *)
