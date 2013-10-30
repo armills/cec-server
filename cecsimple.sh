@@ -14,7 +14,7 @@
 CECLOG=/tmp/cec.log
 CECDEV=/dev/ttyACM0
 CECFIFO=/tmp/cec.fifo
-CECCLIENT="/usr/local/bin/cec-client -s -d 8 -p 1 -b 5 -t p -o XBMC $CECDEV"
+CECCLIENT="/usr/bin/cec-client -s -d 8 -p 1 -b 5 -t p -o XBMC $CECDEV"
 
 
 log(){
