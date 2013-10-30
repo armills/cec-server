@@ -11,7 +11,7 @@
 CECLOG=/tmp/cec.log
 CECDEV=/dev/ttyACM0
 CECFIFO=/tmp/cec.fifo
-CECCLIENT="/usr/local/bin/cec-client -d 8 -p 1 -b 5 -t p -o MythTV -f $CECLOG $CECDEV"
+CECCLIENT="/usr/local/bin/cec-client -d 8 -p 1 -b 5 -t p -o XBMC -f $CECLOG $CECDEV"
 
 log(){
     echo "SERVER:  $1" >> $CECLOG
